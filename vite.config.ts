@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
       DELCOM_BASEURL: JSON.stringify(
         process.env.VITE_DELCOM_BASEURL ||
           env.VITE_DELCOM_BASEURL ||
-          "https://open-api.delcom.org/api/v1"
+          (isVercel ? "/delcom-api" : "https://open-api.delcom.org/api/v1")
       ),
     },
     test: {
