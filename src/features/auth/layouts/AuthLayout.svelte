@@ -8,7 +8,7 @@
 <AuthSessionRedirect />
 
 <div class="min-h-screen grid lg:grid-cols-2 bg-slate-50">
-  <aside class="hidden lg:flex flex-col justify-between bg-blue-600 text-white p-12">
+  <aside aria-label="Informasi Delcom Courses" class="hidden lg:flex flex-col justify-between bg-blue-600 text-white p-12">
     <div class="flex items-center gap-3">
       <div class="p-2.5 bg-white/15 rounded-xl">
         <GraduationCap class="w-8 h-8" />

@@ -152,7 +152,7 @@
                 type="button"
                 onclick={handleDeleteCourse}
                 data-testid="btn-delete-course"
-                class="flex items-center gap-1.5 px-3 py-2 bg-red-50 hover:bg-red-100 text-red-600 rounded-xl text-sm font-semibold"
+                class="flex items-center gap-1.5 px-3 py-2 bg-red-50 hover:bg-red-100 text-red-700 rounded-xl text-sm font-semibold"
               >
                 <Trash2 class="w-4 h-4" />
                 <span>Hapus</span>
@@ -164,7 +164,7 @@
                 type="button"
                 onclick={handleLeave}
                 data-testid="btn-leave-course"
-                class="flex items-center gap-1.5 px-4 py-2 bg-red-50 hover:bg-red-100 text-red-600 rounded-xl text-sm font-semibold"
+                class="flex items-center gap-1.5 px-4 py-2 bg-red-50 hover:bg-red-100 text-red-700 rounded-xl text-sm font-semibold"
               >
                 <UserMinus class="w-4 h-4" />
                 <span>Keluar Kursus</span>
@@ -283,7 +283,7 @@
                     onclick={() => handleDeleteContent(item.id)}
                     aria-label={"Hapus materi " + item.title}
                     data-testid={"delete-content-" + item.id}
-                    class="p-1.5 text-red-600 hover:bg-red-50 rounded-lg"
+                    class="p-1.5 text-red-700 hover:bg-red-50 rounded-lg"
                   >
                     <Trash2 class="w-4 h-4" />
                   </button>

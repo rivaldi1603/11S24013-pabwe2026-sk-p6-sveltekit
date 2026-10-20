@@ -22,6 +22,7 @@
       class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
     >
       <Menu class="w-5 h-5" />
+      <span class="sr-only">Buka menu navigasi</span>
     </button>
     <a href="/" class="flex items-center gap-2.5 text-blue-600 font-extrabold text-xl">
       <GraduationCap class="w-7 h-7" />
@@ -39,7 +40,7 @@
       type="button"
       onclick={handleLogout}
       data-testid="logout-button"
-      class="flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-red-600 bg-red-50 hover:bg-red-100 rounded-xl transition"
+      class="flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-red-700 bg-red-50 hover:bg-red-100 rounded-xl transition"
     >
       <LogOut class="w-4 h-4" />
       <span>Keluar</span>

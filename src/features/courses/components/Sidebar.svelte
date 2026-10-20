@@ -21,10 +21,11 @@
 </script>
 
 <aside
+  aria-label="Sidebar Navigasi"
   data-testid="sidebar"
   class="w-64 bg-white border-r border-slate-200 shrink-0 {isOpen ? 'block' : 'hidden'} lg:block"
 >
-  <nav class="p-4 space-y-1">
+  <nav aria-label="Navigasi Menu Utama" class="p-4 space-y-1">
     {#each menus as item (item.href)}
       {@const Icon = item.icon}
       {@const active = isMenuActive(item.href, pathname)}

@@ -76,7 +76,7 @@
         type="button"
         onclick={handleDeleteAll}
         data-testid="delete-all-courses"
-        class="flex items-center gap-2 px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 font-semibold rounded-xl"
+        class="flex items-center gap-2 px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-700 font-semibold rounded-xl"
       >
         <Trash2 class="w-4 h-4" />
         <span>Hapus Semua</span>
@@ -143,7 +143,7 @@
                 onclick={() => handleDeleteCourse(item.id)}
                 aria-label={"Hapus kursus " + item.title}
                 data-testid={"delete-course-" + item.id}
-                class="p-2 text-red-600 hover:bg-red-50 rounded-lg"
+                class="p-2 text-red-700 hover:bg-red-50 rounded-lg"
               >
                 <Trash2 class="w-4 h-4" />
               </button>

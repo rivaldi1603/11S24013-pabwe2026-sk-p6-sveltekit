@@ -17,6 +17,7 @@
     "*"
   ],
   "exclude": [
-    "src/service-worker"
+    "src/service-worker",
+    "src/**/*.test.ts"
   ]
 }

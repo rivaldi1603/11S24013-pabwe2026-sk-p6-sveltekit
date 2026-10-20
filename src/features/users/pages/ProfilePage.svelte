@@ -114,14 +114,18 @@
           />
         {/if}
         <form onsubmit={handleUploadPhoto} class="space-y-3" data-testid="photo-form">
-          <input
-            type="file"
-            accept="image/*"
-            onchange={handleFileChange}
-            aria-label="Pilih berkas foto profil"
-            data-testid="photo-input"
-            class="block w-full text-sm text-slate-600"
-          />
+          <div>
+            <label for="photo-input" class="block text-sm font-medium text-slate-700 mb-1">Pilih Berkas Foto</label>
+            <input
+              id="photo-input"
+              type="file"
+              accept="image/*"
+              onchange={handleFileChange}
+              aria-label="Pilih berkas foto profil"
+              data-testid="photo-input"
+              class="block w-full text-sm text-slate-600"
+            />
+          </div>
           <button
             type="submit"
             disabled={!selectedPhoto}
