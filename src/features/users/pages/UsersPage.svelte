@@ -62,7 +62,7 @@
           <div class="min-w-0 flex-1">
             <h2 class="font-semibold text-slate-900 truncate">{user.name}</h2>
             <p class="text-sm text-slate-500 truncate">{user.email}</p>
-            <p class="text-xs text-slate-400 mt-1">Bergabung: {formatDate(user.created_at)}</p>
+            <p class="text-xs text-slate-600 mt-1">Bergabung: {formatDate(user.created_at)}</p>
           </div>
         </div>
       {/each}
