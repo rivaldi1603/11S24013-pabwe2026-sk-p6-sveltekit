@@ -7,7 +7,7 @@ import process from "process";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const port = Number(process.env.APP_PORT || env.APP_PORT) || 3002;
+  const port = Number(process.env.APP_PORT || env.APP_PORT) || 3005;
 
   return {
     plugins: [
