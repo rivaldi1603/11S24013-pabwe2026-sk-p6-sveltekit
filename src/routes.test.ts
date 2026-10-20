@@ -10,6 +10,7 @@ import AuthLoginRoute from "./routes/auth/login/+page.svelte";
 import AuthRegisterRoute from "./routes/auth/register/+page.svelte";
 import CourseDetailRoute from "./routes/courses/[courseId]/+page.svelte";
 import CourseContentRoute from "./routes/courses/[courseId]/contents/[contentId]/+page.svelte";
+import CoursesRoute from "./routes/courses/+page.svelte";
 import UsersRoute from "./routes/users/+page.svelte";
 import ProfileRoute from "./routes/profile/+page.svelte";
 import { mockPage } from "./setupTests";
@@ -60,6 +61,7 @@ describe("SvelteKit Routes", () => {
     render(CourseContentRoute);
     await tick();
 
+    render(CoursesRoute);
     render(UsersRoute);
     render(ProfileRoute);
   });

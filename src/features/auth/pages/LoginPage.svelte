@@ -22,40 +22,44 @@
 
 <div class="space-y-6">
   <div>
-    <h2 class="text-2xl font-bold text-slate-900">Masuk ke Akun</h2>
+    <h1 class="text-2xl font-bold text-slate-900">Masuk ke Akun</h1>
     <p class="text-sm text-slate-500 mt-1">Silakan masuk untuk mengakses daftar kursus</p>
   </div>
 
   <form onsubmit={handleSubmit} class="space-y-4" data-testid="login-form">
     <div>
-      <label for="login-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+      <label for="login-email-input" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
       <input
-        id="login-email"
+        id="login-email-input"
         type="email"
         required
         value={$email}
         oninput={onEmailChange}
         placeholder="nama@email.com"
+        data-testid="login-email-input"
         class="w-full px-4 py-2.5 border border-slate-300 rounded-xl"
       />
     </div>
 
     <div>
-      <label for="login-password" class="block text-sm font-medium text-slate-700 mb-1">Kata Sandi</label>
+      <label for="login-password-input" class="block text-sm font-medium text-slate-700 mb-1">Kata Sandi</label>
       <input
-        id="login-password"
+        id="login-password-input"
         type="password"
         required
         value={$password}
         oninput={onPasswordChange}
         placeholder="••••••••"
+        data-testid="login-password-input"
         class="w-full px-4 py-2.5 border border-slate-300 rounded-xl"
       />
     </div>
 
     <button
+      id="login-submit-button"
       type="submit"
       disabled={isLoading}
+      data-testid="login-submit-button"
       class="w-full py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition disabled:opacity-50"
     >
       {isLoading ? "Memproses..." : "Masuk"}
