@@ -39,7 +39,9 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       DELCOM_BASEURL: JSON.stringify(
-        env.VITE_DELCOM_BASEURL || "http://localhost:8000/api/v1"
+        process.env.VITE_DELCOM_BASEURL ||
+          env.VITE_DELCOM_BASEURL ||
+          "https://open-api.delcom.org/api/v1"
       ),
     },
     test: {
