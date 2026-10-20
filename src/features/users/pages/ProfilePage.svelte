@@ -118,6 +118,7 @@
             type="file"
             accept="image/*"
             onchange={handleFileChange}
+            aria-label="Pilih berkas foto profil"
             data-testid="photo-input"
             class="block w-full text-sm text-slate-600"
           />

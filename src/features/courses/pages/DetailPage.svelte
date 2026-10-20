@@ -272,6 +272,7 @@
                   <button
                     type="button"
                     onclick={() => openEditContent(item)}
+                    aria-label={"Ubah materi " + item.title}
                     data-testid={"edit-content-" + item.id}
                     class="p-1.5 text-blue-600 hover:bg-blue-50 rounded-lg"
                   >
@@ -280,6 +281,7 @@
                   <button
                     type="button"
                     onclick={() => handleDeleteContent(item.id)}
+                    aria-label={"Hapus materi " + item.title}
                     data-testid={"delete-content-" + item.id}
                     class="p-1.5 text-red-600 hover:bg-red-50 rounded-lg"
                   >

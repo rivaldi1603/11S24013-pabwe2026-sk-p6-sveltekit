@@ -17,6 +17,7 @@
     <button
       type="button"
       onclick={onToggleSidebar}
+      aria-label="Buka menu navigasi"
       data-testid="toggle-sidebar"
       class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
     >

@@ -17,9 +17,9 @@
     </div>
 
     <div class="space-y-4 max-w-md">
-      <h2 class="text-4xl font-extrabold leading-tight">
+      <p class="text-4xl font-extrabold leading-tight">
         Platform Manajemen Kursus & Pembelajaran Interaktif
-      </h2>
+      </p>
       <p class="text-blue-100 text-lg">
         Kelola kursus, materi video pembelajaran, peserta, dan rating dalam satu ekosistem pembelajaran terpadu.
       </p>

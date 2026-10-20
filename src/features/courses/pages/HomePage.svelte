@@ -91,6 +91,7 @@
         type="text"
         bind:value={search}
         placeholder="Cari judul atau deskripsi kursus..."
+        aria-label="Cari judul atau deskripsi kursus"
         data-testid="search-course"
         class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-xl"
       />
@@ -122,7 +123,7 @@
               <img src={item.cover} alt={item.title} class="w-full h-44 object-cover" />
             {/if}
             <div class="p-5 space-y-2">
-              <h3 class="text-lg font-bold text-slate-900">{item.title}</h3>
+              <h2 class="text-lg font-bold text-slate-900">{item.title}</h2>
               <p class="text-sm text-slate-600 line-clamp-2">{item.description}</p>
             </div>
           </div>
@@ -140,6 +141,7 @@
               <button
                 type="button"
                 onclick={() => handleDeleteCourse(item.id)}
+                aria-label={"Hapus kursus " + item.title}
                 data-testid={"delete-course-" + item.id}
                 class="p-2 text-red-600 hover:bg-red-50 rounded-lg"
               >

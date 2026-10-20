@@ -31,7 +31,9 @@
       <label for="register-name-input" class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
       <input
         id="register-name-input"
+        name="name"
         type="text"
+        autocomplete="name"
         required
         value={$name}
         oninput={onNameChange}
@@ -45,7 +47,9 @@
       <label for="register-email-input" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
       <input
         id="register-email-input"
+        name="email"
         type="email"
+        autocomplete="email"
         required
         value={$email}
         oninput={onEmailChange}
@@ -59,7 +63,9 @@
       <label for="register-password-input" class="block text-sm font-medium text-slate-700 mb-1">Kata Sandi</label>
       <input
         id="register-password-input"
+        name="password"
         type="password"
+        autocomplete="new-password"
         required
         value={$password}
         oninput={onPasswordChange}

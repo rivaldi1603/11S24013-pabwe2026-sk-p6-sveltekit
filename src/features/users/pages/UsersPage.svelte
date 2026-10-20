@@ -37,6 +37,7 @@
         type="text"
         bind:value={search}
         placeholder="Cari pengguna..."
+        aria-label="Cari pengguna"
         data-testid="search-users-input"
         class="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-xl bg-white"
       />
@@ -59,7 +60,7 @@
             {/if}
           </div>
           <div class="min-w-0 flex-1">
-            <h3 class="font-semibold text-slate-900 truncate">{user.name}</h3>
+            <h2 class="font-semibold text-slate-900 truncate">{user.name}</h2>
             <p class="text-sm text-slate-500 truncate">{user.email}</p>
             <p class="text-xs text-slate-400 mt-1">Bergabung: {formatDate(user.created_at)}</p>
           </div>

@@ -31,7 +31,9 @@
       <label for="login-email-input" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
       <input
         id="login-email-input"
+        name="email"
         type="email"
+        autocomplete="email"
         required
         value={$email}
         oninput={onEmailChange}
@@ -45,7 +47,9 @@
       <label for="login-password-input" class="block text-sm font-medium text-slate-700 mb-1">Kata Sandi</label>
       <input
         id="login-password-input"
+        name="password"
         type="password"
+        autocomplete="current-password"
         required
         value={$password}
         oninput={onPasswordChange}
